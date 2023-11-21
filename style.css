@@ -1,0 +1,126 @@
+*{
+    font-family: 'Overpass', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.rating-state{
+    /* here */
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 30px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 1.8rem;
+    border-radius: 18px;
+    width: 53vh;
+}
+
+.star-container{
+    background-color: hsl(213, 16%, 23%);
+    padding: 5px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.rating-state .content h1{
+    color: hsl(0, 0%, 100%);
+}
+
+.rating-state .content p{
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
+
+#button-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rate-btn{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(218, 10%, 22%);
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.rate-btn:hover{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+#submit-btn{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+}
+
+#submit-btn:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+/* Thank You State */
+.thankyou-state{
+    /* here */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 1.8rem;
+    border-radius: 18px;
+    width: 50vh;
+}
+
+#score{
+    font-size: 15px;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(218, 10%, 22%);
+    padding: 6px 12px;
+    border-radius: 30px;
+}
+
+.thankyou-state .content{
+    text-align: center;
+}
+
+.thankyou-state .content h1{
+    color: hsl(0, 0%, 100%);
+}
+
+.thankyou-state .content p{
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+}
+
+@media (max-width: 400px) {
+    .rating-state{
+        width: 50vh;
+    }
+}
